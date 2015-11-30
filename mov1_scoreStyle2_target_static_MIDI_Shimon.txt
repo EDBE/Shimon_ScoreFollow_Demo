@@ -1,0 +1,496 @@
+; Antescofo score generated using libmusicxml and embedded xml2antescofo converter.
+; Copyright (c) Thomas Coffy - IRCAM 2012-14
+BPM 92
+
+;; Deal with Shimon's 500ms delay
+;	$beats := 4
+;	@fun_def beat2ms($beats) {
+;		return 60000/$RT_TEMPO*beats - 500
+;	}
+
+; @fun_def beat2ms ($beats) { return 1000.*$beats.*60/$RT_TEMPO }
+
+; ----------- measure 1 --- beat 1
+NOTE A3 1 measure1
+
+group 1toall @target:={e1, e2, e3, e4, e5, e6, e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,e17, e18, e19, e20, e21}{
+	
+;	NOTE A4 1/2 // measure1
+	(60000/$RT_TEMPO * 4 - 500)ms mnote 69 0.5
+;	NOTE C5 1/2
+	0.5 mnote 72 0.5
+; 	NOTE E5	3/2
+	0.5 mnote 76 1.5
+;	NOTE D5 1/2
+	1.5 mnote 74 0.5
+;	NOTE G4 1
+	0.5 mnote 67 1
+
+;	NOTE A4 1 // measure 3
+	1 mnote 69 1.5   
+;	NOTE 0 1/2	
+;	1 mnote 0 0.5
+;	NOTE A4 1/2	
+	1.5 mnote 69 0.5
+;	NOTE B4 1/2	
+	0.5 mnote 71 0.5
+;	NOTE C5 1/2	
+	0.5 mnote 72 0.5
+;	NOTE G4 1/2	
+	0.5 mnote 67 0.5
+;	NOTE A4 1/2	
+	0.5 mnote 69 0.5
+
+; 				measure 4
+	0.5 mnote 64 1 	
+	1 mnote 64 1
+	1 mnote 64 1
+	1 mnote 64 1
+
+;	CHORD ( F4 E6 ) 1/2 	// measure5
+	1 mnote 88 0.5
+;	0.1ms mnote 65 0.5
+
+;	CHORD ( -F4 D6 ) 1/2
+	0.5 mnote 86 0.5
+;	0.1ms mnote 65 0.5
+	
+;	CHORD ( F#4 A5 ) 1
+	0.5 mnote 81 1.5
+;	0.1ms mnote 66 1
+	
+;	CHORD ( -A5 G4 ) 1/2
+;	1 mnote 81 0.5
+;	0.1ms mnote 67 0.5
+
+;	CHORD ( -G4 B5 ) 1/2
+	1.5 mnote  83 0.5
+;	0.00001 mnote 67 0.5
+
+;	CHORD ( F#4 E6 ) 1/2
+	0.5 mnote 88 0.5
+;	0.1ms mnote 66 0.5
+
+;	CHORD ( -F#4 D6 ) 1/2
+	0.5 mnote 86 0.5
+;	0.1ms mnote 66 0.5
+
+;	CHORD ( F4 E6 ) 1/2 	// measure6
+	0.5 mnote 88 0.5
+;	0.1ms mnote 65 0.5
+
+;	CHORD ( -F4 D6 ) 1/2
+	0.5 mnote 86 0.5
+;	0.1ms mnote 65 0.5
+	
+;	CHORD ( F#4 A5 ) 1
+	0.5 mnote 81 1.5
+;	0.1ms mnote 66 1
+
+;	CHORD ( -A5 G4 ) 1/2
+;	1 mnote 81 0.5
+;	0.1ms mnote 67 0.5
+
+;	CHORD ( -G4 B5 ) 1/2
+	1.5 mnote 83 0.5
+;	0.00001 mnote 67 0.5
+
+;	CHORD ( F#4 E6 ) 1/2
+	0.5 mnote 88 0.5
+;	0.1ms mnote 66 0.5
+
+;	CHORD ( -F#4 D6 ) 1/2
+	0.5 mnote 86 0.5
+;	0.1ms mnote 66 0.5 
+
+;	CHORD ( F4 E6 ) 1/2 	// measure7
+	0.5 mnote 88 0.5
+;	0.1ms mnote 65 0.5
+
+;	CHORD ( -F4 D6 ) 1/2
+	0.5 mnote 86 0.5
+;	0.1ms mnote 65 0.5
+
+;	CHORD ( F#4 A5 ) 1/2
+	0.5 mnote 81 0.5
+;	0.1ms mnote 66 0.5
+
+;	CHORD ( -F#4 B5 ) 1/2
+	0.5 mnote 83 0.5
+;	0.1ms mnote 66 0.5
+
+;	CHORD ( G4 C6 ) 1
+	0.5 mnote 84 1
+;	0.1ms mnote 67 1
+
+;	CHORD ( F#4 B5 ) 1/2
+	1 mnote 83 0.5
+;	0.1ms mnote 66 0.5
+
+;	CHORD ( -F#4 C6 ) 1/2
+	0.5 mnote 84 0.5
+;	0.1ms mnote 66 0.5
+
+;	CHORD ( F4 G5 ) 1 		// measure8
+	0.5 mnote 79 1
+;	0.1ms mnote 65 1
+
+;	CHORD ( E4 A5 ) 1
+	1 mnote 81 1
+;	0.1ms mnote 64 1
+
+;	NOTE 0 2
+	1 mnote 0 2
+
+;    NOTE 0 1
+	2 mnote 0 1				// measure9
+
+;	NOTE E5 1 				
+	1 mnote 76 1
+
+;	NOTE D5 1
+	1 mnote 74 1
+
+;	NOTE C5 1
+	1 mnote 72 1
+
+;	NOTE B4 1 				// measure10
+	1 mnote 71 2
+
+;	CHORD ( C4 -B4 ) 1
+	1 mnote 60 1
+	mnote 60 1
+
+;	CHORD ( F3 A4 ) 1
+	1 mnote 69 1
+	mnote 53 1
+	
+;	CHORD ( G3 B4 ) 1
+	1 mnote 71 1
+	mnote 55 1
+
+;	CHORD ( C3 B4 ) 1 		// measure11
+	1 mnote 71 1
+	mnote 48 1
+	
+;	CHORD ( F3 A4 ) 1
+	1 mnote 69 1
+	mnote 53 1
+
+;	CHORD ( B2 G4 ) 1
+	1 mnote 67 1
+	mnote 47 1
+	
+;	CHORD ( E3 D4 ) 1/2
+	1 mnote 62 0.5
+;	mnote 52 0.5
+	
+;	CHORD ( -E3 G4 ) 1/2
+	0.5 mnote 67 0.5
+	mnote 52 1
+
+;	CHORD ( A2 D4 ) 1 		// measure12
+	0.5 mnote 62 1
+;	0.1ms mnote 45 1
+	
+;	CHORD ( -A2 C#4 ) 2
+	1 mnote 61 2
+;	0.1ms mnote 45 2
+	
+;	CHORD ( -A2 C4 ) 1
+	2 mnote 60 1
+;	0.1ms mnote 45 1
+
+;	CHORD ( B2 C4 ) 1 		// measure13
+	1 mnote 60 1
+;	0.1ms mnote 47 1
+	
+;	CHORD ( -B2 B3 ) 1
+	1 mnote 59 1
+;	0.1ms mnote 47 1
+	
+;	CHORD ( -B2 A3 ) 3/2
+	1 mnote 57 1.5
+;	0.1ms mnote 47 1.5
+	
+;	CHORD ( -B2 B3 ) 1/2
+	1.5 mnote 59 0.5
+;	0.1ms mnote 47 0.5
+
+;	CHORD ( B2 C4 ) 1 		// measure14
+	0.5 mnote 60 1
+;	0.1ms mnote 47 1
+	
+;	CHORD ( -B2 B3 ) 1
+	1 mnote 59 1
+;	0.1ms mnote 47 1
+	
+;	CHORD ( -B2 A3 ) 3/2
+	1 mnote 57 1.5
+;	0.1ms mnote 47 1.5
+	
+;	CHORD ( -B2 B3 ) 1/2
+	1.5 mnote 59 0.5
+;	0.1ms mnote 47 0.5
+
+;	CHORD ( B2 C4 ) 1 		// measure15
+	0.5 mnote 60 1
+;	0.1ms mnote 47 1
+	
+;	CHORD ( -B2 B3 ) 1
+	1 mnote 59 1
+;	0.1ms mnote 47 1
+	
+;	CHORD ( -B2 A3 ) 3/2
+	1 mnote 57 1.5
+;	0.1ms mnote 47 1.5
+	
+;	CHORD ( -B2 B3 ) 1/2
+	1.5 mnote 59 0.5
+;	0.1ms mnote 47 0.5
+
+;	NOTE B3 4 				// measure16
+	0.5 mnote 59 1
+	1 mnote 59 1
+	1 mnote 59 1
+	1 mnote 59 1
+
+;	CHORD ( F4 E6 ) 1/2 	// measure17
+	1 mnote 88 0.5	
+;	0.1ms mnote 65 0.5
+
+;	CHORD ( -F4 D6 ) 1/2
+	0.5 mnote 86 0.5
+;	0.1ms mnote 65 0.5
+	
+;	CHORD ( F#4 A5 ) 1
+	0.5 mnote 81 1.5
+;	0.1ms mnote 66 1
+	
+;	CHORD ( -A5 G4 ) 1/2
+;	1 mnote 81 0.5
+;	0.1ms mnote 67 0.5
+
+;	CHORD ( -G4 B5 ) 1/2
+	1.5 mnote 83 0.5
+;	0.1ms mnote 67 0.5
+	
+;	CHORD ( F#4 E6 ) 1/2
+	0.5 mnote 88 0.5
+;	0.1ms mnote 66 0.5
+	
+;	CHORD ( -F#4 D6 ) 1/2
+	0.5 mnote 86 0.5
+;	0.1ms mnote 66 0.5
+
+;	CHORD ( F4 E6 ) 1/2 	// measure18
+	0.5 mnote 88 0.5
+;	0.1ms mnote 65 0.5
+	
+;	CHORD ( -F4 D6 ) 1/2
+	0.5 mnote 86 0.5
+;	0.1ms mnote 65 0.5
+	
+;	CHORD ( F#4 A5 ) 1	
+	0.5 mnote 81 1.5
+;	0.1ms mnote 66 1
+
+;	CHORD ( -A5 G4 ) 1/2
+;	1 mnote 81 0.5
+;	0.1ms mnote 67 0.5
+
+;	CHORD ( -G4 B5 ) 1/2
+	1.5 mnote 83 0.5
+;	0.1ms mnote 67 0.5
+	
+;	CHORD ( F#4 E6 ) 1/2
+	0.5 mnote 88 0.5
+;	0.1ms mnote 66 0.5
+	
+;	CHORD ( -F#4 D6 ) 1/2
+	0.5 mnote 86 0.5
+;	0.1ms mnote 66 0.5
+
+;	CHORD ( F4 E6 ) 1/2 	// measure19
+	0.5 mnote 88 0.5
+;	0.1ms mnote 65 0.5
+	
+;	CHORD ( -F4 D6 ) 1/2
+	0.5 mnote 86 0.5
+;	0.1ms mnote 65 0.5
+	
+;	CHORD ( F#4 A5 ) 1/2
+	0.5 mnote 81 0.5
+;	0.1ms mnote 66 0.5
+	
+;	CHORD ( -F#4 B5 ) 1/2
+	0.5 mnote 83
+;	0.1ms mnote 66 0.5
+	
+;	CHORD ( G4 C6 ) 1
+	0.5 mnote 84 1
+;	0.1ms mnote 67 1
+	
+;	CHORD ( F#4 B5 ) 1/2
+	1 mnote 83 0.5
+;	0.1ms mnote 66 0.5
+	
+;	CHORD ( -F#4 C6 ) 1/2
+	0.5 mnote 84 0.5
+;	0.1ms mnote 66 0.5
+
+;	CHORD ( F4 G5 ) 2 		// measure20
+	0.5 mnote 79 2
+;	0.1ms mnote 65 1
+
+;	1 mnote 79 1
+	
+;	0.1ms mnote 65 1
+	
+;	CHORD ( E4 A5 ) 1
+	2 mnote 81 1
+;	0.1ms mnote 64 1
+	
+;	NOTE E4 1
+;	1 mnote 64 1
+
+}
+
+
+NOTE G4 1
+NOTE F4 1
+NOTE E4 1/2
+NOTE F4 1/2
+; ---------- measure2 --- beat 5
+NOTE A3 1 
+NOTE G4 1
+NOTE F4 1
+NOTE E4 1/2 e1
+NOTE F4 1/2
+
+; ----------- measure 3 --- beat 9
+NOTE A3 1
+NOTE B3 1
+NOTE C4 1
+NOTE D4 1 e2
+
+
+; ----------- measure 4 --- beat 13
+NOTE E4 1 measure4
+CHORD ( E3 -E4 ) 1 
+CHORD ( E2 -E4 ) 1 
+CHORD ( E3 -E4 ) 1 e3
+
+; ----------- measure 5 --- beat 17
+
+CHORD (D5 E3) 1 e4 measure5
+CHORD (D5 -E3) 1 
+;NOTE D5 1
+NOTE D5 1 e5
+NOTE D5 1 
+
+; ----------- measure 6 --- beat 21
+CHORD (D5 E3) 1 e6 measure6
+CHORD (D5 -E3) 1
+;NOTE D5 1
+NOTE D5 1 e7
+NOTE D5 1 
+
+; ----------- measure 7 --- beat 25
+CHORD (D5 E3) 1 e8 measure7
+CHORD (D5 -E3) 1
+NOTE D5 1 e9
+NOTE D5 1 
+
+; ----------- measure 8 --- beat 29
+CHORD ( E2 B4 ) 1 measure8
+CHORD ( A2 C5 ) 1
+NOTE A1 1
+NOTE E5 1/2 
+NOTE D5 1/2 e10
+
+; ----------- measure 9 --- beat 33
+NOTE E5 1/2 measure9
+NOTE F5 1/2
+NOTE G5 3/2
+NOTE A5 1/2
+NOTE E5 1/2 e11
+NOTE D5 1/2
+
+; ----------- measure 10 --- beat 37
+NOTE E5 1/2 measure10
+NOTE F5 1/2
+NOTE G5 3/2
+NOTE A5 1/2
+NOTE E5 1/2
+NOTE D5 1/2
+
+; ----------- measure 11 --- beat 41
+NOTE E5 1/2 measure11
+NOTE F5 1/2
+NOTE D5 3/2
+NOTE E5 1/2
+NOTE B4 1 e12
+
+; ----------- measure 12 --- beat 45
+NOTE B4 1 measure12
+NOTE E4 1/2
+NOTE F#4 1/2
+NOTE G4 1
+NOTE A4 1/2 e13
+NOTE B4 1/2
+
+; ----------- measure 13 --- beat 49
+CHORD ( F4 A4 ) 1/2 measure13
+CHORD ( -F4 C5 ) 1/2
+CHORD ( F4 E5 ) 1
+CHORD ( F4 -E5) 1/2
+CHORD ( -F4 D5) 1/2
+CHORD ( F4 G4 ) 1 e14
+
+; ----------- measure 14 --- beat 53
+CHORD ( F4 A4 ) 1/2 measure14
+CHORD ( -F4 C5 ) 1/2
+CHORD ( F4 E5 ) 1
+CHORD ( F4 -E5) 1/2
+CHORD ( -F4 D5) 1/2
+CHORD ( F4 G4 ) 1 e15
+
+; ----------- measure 15 --- beat 57
+CHORD ( F4 A4 ) 1 measure15
+NOTE F4 1/2
+CHORD ( -F4 A4 ) 1/2
+CHORD ( F4 B4 ) 1/2
+CHORD ( -F4 C5 ) 1/2
+CHORD ( F4 G4 ) 1/2 e16
+CHORD ( -F4 A4 ) 1/2
+
+; ----------- measure 16 --- beat 61
+NOTE E4 1 measure16
+CHORD ( E3 -E4 ) 1
+CHORD ( E2 -E4 ) 1
+CHORD ( E3 -E4 ) 1 e17
+
+; ----------- measure 17 --- beat 65
+CHORD (D5 E3) 1 measure17
+CHORD (D5 -E3) 1
+NOTE D5 1
+NOTE D5 1 e18
+
+; ----------- measure 18 --- beat 69
+CHORD (D5 E3) 1 measure18
+CHORD (D5 -E3) 1
+NOTE D5 1 
+NOTE D5 1 e19
+
+CHORD (D5 E3) 1 measure19
+CHORD (D5 -E3) 1
+CHORD (D5 -E3) 1
+;NOTE D5 1
+NOTE D5 1 e20
+
+; ----------- measure 20 --- beat 77
+NOTE B4 1 measure20
+CHORD ( E2 B4 ) 1 
+CHORD ( A1 A2 C5 ) 2 e21
+;NOTE 0 1
