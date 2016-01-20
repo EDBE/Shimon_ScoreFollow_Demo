@@ -1,6 +1,6 @@
 ; Antescofo score generated using libmusicxml and embedded xml2antescofo converter.
 ; Copyright (c) Thomas Coffy - IRCAM 2012-14
-BPM 92
+BPM 58
 
 ;; Deal with Shimon's 500ms delay
 ;	$beats := 4
@@ -13,7 +13,7 @@ BPM 92
 ; ----------- measure 1 --- beat 1
 NOTE A3 1 measure1
 
-group 1toall @target:={e1, e2, e3, e4, e5, e6, e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,e17, e18, e19, e20, e21}{
+group 1toall @target:={e1, e2, e3, e4, e5, e6, e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,e17, e18, e19, e20, e21, e22,e23,e24}{
 	
 ;	NOTE A4 1/2 // measure1
 	(60000/$RT_TEMPO * 4 - 500)ms mnote 69 0.5
@@ -383,22 +383,26 @@ CHORD ( E3 -E4 ) 1 e3
 
 ; ----------- measure 5 --- beat 17
 
-CHORD (D5 E3) 1 e4 measure5
-CHORD (D5 -E3) 1 
-;NOTE D5 1
+;CHORD (D5 E3) 1 e4 measure5
+;CHORD (D5 -E3) 1 
+NOTE D5 1 e4 measure 5
+NOTE D5 1
 NOTE D5 1 e5
 NOTE D5 1 
 
 ; ----------- measure 6 --- beat 21
-CHORD (D5 E3) 1 e6 measure6
-CHORD (D5 -E3) 1
-;NOTE D5 1
+;CHORD (D5 E3) 1 e6 measure6
+;CHORD (D5 -E3) 1
+NOTE D5 1 e6 measure6
+NOTE D5 1
 NOTE D5 1 e7
 NOTE D5 1 
 
 ; ----------- measure 7 --- beat 25
-CHORD (D5 E3) 1 e8 measure7
-CHORD (D5 -E3) 1
+;CHORD (D5 E3) 1 e8 measure7
+;CHORD (D5 -E3) 1
+NOTE D5 1 e8 measure7
+NOTE D5 1 
 NOTE D5 1 e9
 NOTE D5 1 
 
@@ -472,25 +476,26 @@ CHORD ( E2 -E4 ) 1
 CHORD ( E3 -E4 ) 1 e17
 
 ; ----------- measure 17 --- beat 65
-CHORD (D5 E3) 1 measure17
-CHORD (D5 -E3) 1
-NOTE D5 1
-NOTE D5 1 e18
+CHORD (D5 E3) 1 e18 measure17
+CHORD (D5 -E3) 1 
+NOTE D5 1 e19
+NOTE D5 1 
 
 ; ----------- measure 18 --- beat 69
-CHORD (D5 E3) 1 measure18
-CHORD (D5 -E3) 1
+CHORD (D5 E3) 1 e20 measure18
+CHORD (D5 -E3) 1 
+NOTE D5 1 e21
 NOTE D5 1 
-NOTE D5 1 e19
 
-CHORD (D5 E3) 1 measure19
+; ----------- measure19 --- beat 73
+CHORD (D5 E3) 1 e22
 CHORD (D5 -E3) 1
-CHORD (D5 -E3) 1
+CHORD (D5 -E3) 1 e23 
 ;NOTE D5 1
-NOTE D5 1 e20
+NOTE D5 1 
 
 ; ----------- measure 20 --- beat 77
 NOTE B4 1 measure20
 CHORD ( E2 B4 ) 1 
-CHORD ( A1 A2 C5 ) 2 e21
+CHORD ( A1 A2 C5 ) 2 e24
 ;NOTE 0 1
